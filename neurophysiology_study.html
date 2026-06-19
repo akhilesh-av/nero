@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDS 3rd Year — Chapter 1 Neurophysiology EXAM GUIDE</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+  :root{--navy:#0d1b2a;--navy2:#1a2e44;--amber:#e8a020;--amberl:#f5c866;--cream:#f8f6f1;--white:#fff;--text:#1c2a3a;--muted:#5a7085;--border:#d4dce5;--green:#1a6b4a;--red:#b94040;--purple:#5a3e8a;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'IBM Plex Sans',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.7;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--navy);border-bottom:3px solid var(--amber);height:50px;display:flex;align-items:center;padding:0 1rem;overflow-x:auto;scrollbar-width:none;gap:0;}
+  nav::-webkit-scrollbar{display:none;}
+  .nb{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:0.72rem;font-weight:700;white-space:nowrap;margin-right:1.5rem;letter-spacing:0.05em;}
+  nav a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.68rem;white-space:nowrap;padding:0 0.8rem;height:50px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:all 0.15s;text-transform:uppercase;letter-spacing:0.04em;font-weight:500;}
+  nav a:hover{color:#fff;border-bottom-color:var(--amber);}
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,#1d3557 100%);color:#fff;padding:6rem 1.5rem 3rem;text-align:center;}
+  .htag{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.5rem;}
+  .hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:700;margin-bottom:0.8rem;line-height:1.2;}
+  .hero p{color:rgba(255,255,255,0.6);max-width:560px;margin:0 auto 1.5rem;font-size:0.9rem;}
+  .hstats{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+  .hs{background:rgba(255,255,255,0.07);border:1px solid rgba(232,160,32,0.3);border-radius:4px;padding:0.7rem 1.2rem;text-align:center;}
+  .hs-n{font-family:'IBM Plex Mono',monospace;font-size:1.4rem;color:var(--amber);font-weight:700;line-height:1;}
+  .hs-l{font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.45);margin-top:0.2rem;}
+  .con{max-width:920px;margin:0 auto;padding:0 1.2rem;}
+  section{padding:3.5rem 0;}
+  section:nth-child(even){background:var(--white);}
+  .sl{font-family:'IBM Plex Mono',monospace;font-size:0.62rem;color:var(--amber);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.3rem;}
+  .st{font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem;line-height:1.2;}
+  .ss{color:var(--muted);font-size:0.87rem;margin-bottom:2rem;max-width:600px;}
+  .div{width:36px;height:3px;background:var(--amber);margin-bottom:2rem;border-radius:2px;}
+  /* EXAM ALERT */
+  .ea{background:linear-gradient(135deg,#7c1d1d,#a02020);color:#fff;border-radius:8px;padding:1rem 1.3rem;margin-bottom:1.5rem;display:flex;gap:0.8rem;align-items:flex-start;font-size:0.87rem;line-height:1.6;}
+  .ea strong{color:var(--amberl);}
+  /* DEF CARD */
+  .dc{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--amber);border-radius:0 6px 6px 0;padding:1.1rem 1.4rem;margin-bottom:1rem;}
+  section:nth-child(even) .dc{background:var(--cream);}
+  .dt{font-family:'IBM Plex Mono',monospace;font-size:0.7rem;color:var(--amber);font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.25rem;}
+  .dd{font-size:0.92rem;line-height:1.7;}
+  .dd strong{color:var(--navy);font-weight:600;}
+  /* GRID */
+  .cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;}
+  .card{background:var(--white);border:1px solid var(--border);border-radius:7px;padding:1.2rem;transition:box-shadow 0.2s,transform 0.2s;}
+  section:nth-child(even) .card{background:var(--cream);}
+  .card:hover{box-shadow:0 4px 18px rgba(0,0,0,0.08);transform:translateY(-2px);}
+  .ct{font-size:0.87rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;}
+  .cb{font-size:0.84rem;color:var(--muted);line-height:1.6;}
+  .cb strong{color:var(--text);}
+  /* STEPS */
+  .steps{list-style:none;}
+  .step{display:flex;gap:1rem;margin-bottom:1.2rem;align-items:flex-start;}
+  .sn{font-family:'IBM Plex Mono',monospace;background:var(--navy);color:var(--amber);font-size:0.65rem;font-weight:700;min-width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .sc{flex:1;padding-top:0.15rem;}
+  .stit{font-weight:700;font-size:0.92rem;color:var(--navy);margin-bottom:0.2rem;}
+  .stxt{font-size:0.87rem;color:var(--muted);line-height:1.6;}
+  .stxt strong{color:var(--text);}
+  /* KEY POINT */
+  .kp{background:var(--navy);color:#fff;border-radius:8px;padding:1.2rem 1.5rem;margin:1.2rem 0;display:flex;gap:0.9rem;align-items:flex-start;}
+  .ki{font-size:1.1rem;flex-shrink:0;}
+  .kt{font-size:0.88rem;line-height:1.6;}
+  .kt strong{color:var(--amberl);}
+  /* TABLE */
+  .wrap{overflow-x:auto;border-radius:6px;border:1px solid var(--border);}
+  table{width:100%;border-collapse:collapse;font-size:0.84rem;}
+  th{background:var(--navy);color:var(--amber);font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.05em;text-transform:uppercase;padding:0.65rem 0.9rem;text-align:left;white-space:nowrap;}
+  td{padding:0.65rem 0.9rem;border-bottom:1px solid var(--border);color:var(--text);vertical-align:top;}
+  tr:nth-child(even) td{background:rgba(0,0,0,0.02);}
+  tr:hover td{background:rgba(232,160,32,0.06);}
+  .hi{color:var(--amber);font-weight:700;font-family:'IBM Plex Mono',monospace;}
+  .tag{display:inline-block;background:var(--amber);color:var(--navy);font-family:'IBM Plex Mono',monospace;font-size:0.55rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.15rem 0.45rem;border-radius:3px;margin-left:0.4rem;vertical-align:middle;}
+  .tag-r{background:#b94040;color:#fff;}
+  .tag-g{background:var(--green);color:#fff;}
+  /* TWO COL */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+  .box{border-radius:7px;padding:1.2rem;border:1px solid var(--border);}
+  .box-e{border-top:3px solid var(--green);background:rgba(26,107,74,0.05);}
+  .box-a{border-top:3px solid var(--purple);background:rgba(90,62,138,0.05);}
+  .box-label{font-family:'IBM Plex Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;margin-bottom:0.5rem;}
+  .box-e .box-label{color:var(--green);}
+  .box-a .box-label{color:var(--purple);}
+  .box ul{list-style:none;}
+  .box li{font-size:0.84rem;padding:0.28rem 0;border-bottom:1px solid var(--border);color:var(--muted);}
+  .box li:last-child{border-bottom:none;}
+  .box li strong{color:var(--text);}
+  /* ACTION POTENTIAL VIZ */
+  .apv{background:var(--navy);border-radius:10px;padding:1.8rem;margin:1.5rem 0;}
+  .apvt{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.2rem;}
+  .apf{display:flex;gap:0;border-radius:6px;overflow:hidden;}
+  .app{flex:1;padding:0.9rem 0.6rem;text-align:center;border-right:1px solid rgba(255,255,255,0.08);}
+  .app:last-child{border-right:none;}
+  .app.r{background:rgba(26,107,74,0.25);}
+  .app.sd{background:rgba(232,160,32,0.2);}
+  .app.rd{background:rgba(185,64,64,0.3);}
+  .app.rp{background:rgba(90,62,138,0.3);}
+  .apl{font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.05em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.3rem;}
+  .apm{font-family:'IBM Plex Mono',monospace;font-size:1.05rem;font-weight:700;color:#fff;}
+  .apd{font-size:0.68rem;color:rgba(255,255,255,0.5);margin-top:0.25rem;line-height:1.4;}
+  /* MECH SEQ */
+  .ms{background:var(--navy);border-radius:10px;padding:1.6rem;margin:1.2rem 0;}
+  .mst{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem;}
+  .msi{display:flex;align-items:flex-start;gap:0.9rem;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.06);}
+  .msi:last-child{border-bottom:none;}
+  .msn{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:0.72rem;min-width:22px;font-weight:700;}
+  .msd{font-size:0.86rem;color:rgba(255,255,255,0.75);line-height:1.5;}
+  .msd strong{color:#fff;}
+  /* ION CARDS */
+  .ig{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.2rem 0;}
+  .ic{background:var(--navy);border-radius:8px;padding:1rem;text-align:center;}
+  .is{font-family:'IBM Plex Mono',monospace;font-size:1.4rem;color:var(--amber);font-weight:700;margin-bottom:0.3rem;}
+  .iv{display:grid;grid-template-columns:1fr 1fr;gap:0.3rem;margin:0.5rem 0;}
+  .ivn{font-family:'IBM Plex Mono',monospace;font-size:0.88rem;color:#fff;font-weight:700;}
+  .ivl{font-size:0.58rem;color:rgba(255,255,255,0.4);text-transform:uppercase;}
+  .ir{font-size:0.7rem;color:var(--amberl);font-family:'IBM Plex Mono',monospace;}
+  /* QUIZ */
+  .quiz-section{background:var(--navy);color:#fff;}
+  .quiz-section .st{color:#fff;}
+  .quiz-section .sl{color:var(--amberl);}
+  .quiz-section .div{background:var(--amberl);}
+  .quiz-section .ss{color:rgba(255,255,255,0.5);}
+  .qc{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:1.2rem;margin-bottom:1rem;}
+  .qq{font-size:0.92rem;font-weight:500;color:#fff;margin-bottom:0.7rem;line-height:1.5;}
+  .qnum{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-size:0.72rem;margin-right:0.35rem;}
+  .qo{list-style:none;display:flex;flex-direction:column;gap:0.4rem;}
+  .qopt{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:5px;padding:0.55rem 0.9rem;font-size:0.84rem;color:rgba(255,255,255,0.7);cursor:pointer;transition:all 0.15s;}
+  .qopt:hover{background:rgba(232,160,32,0.15);border-color:var(--amber);color:#fff;}
+  .qopt.correct{background:rgba(26,107,74,0.35)!important;border-color:#2a7a5c!important;color:#7ef5c4!important;}
+  .qopt.wrong{background:rgba(185,64,64,0.25)!important;border-color:#b94040!important;color:#f5a0a0!important;}
+  .qfb{margin-top:0.7rem;font-size:0.81rem;padding:0.55rem 0.8rem;border-radius:4px;display:none;line-height:1.5;}
+  .qfb.show{display:block;}
+  .qfb.cfb{background:rgba(26,107,74,0.2);color:#7ef5c4;border:1px solid rgba(26,107,74,0.4);}
+  .qfb.wfb{background:rgba(185,64,64,0.15);color:#f5b0b0;border:1px solid rgba(185,64,64,0.3);}
+  /* NERVE FIBRE TABLE */
+  .nft td:nth-child(1){font-family:'IBM Plex Mono',monospace;font-weight:700;color:var(--amber);}
+  /* HIGHLIGHT ROW */
+  .hrow td{background:rgba(232,160,32,0.08)!important;}
+  /* RESPONSIVE */
+  @media(max-width:600px){.apf{flex-direction:column;}.two{grid-template-columns:1fr;}.ig{grid-template-columns:1fr;}.cg{grid-template-columns:1fr;}}
+  footer{background:var(--navy);color:rgba(255,255,255,0.35);text-align:center;padding:1.5rem;font-size:0.7rem;font-family:'IBM Plex Mono',monospace;}
+  h3{font-size:1rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.8rem;}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nb">BDS Y3 · CH.1</span>
+  <a href="#def">Definition</a>
+  <a href="#properties">Properties</a>
+  <a href="#neuron">Neuron</a>
+  <a href="#membrane">Membrane</a>
+  <a href="#ap">Action Potential</a>
+  <a href="#ions">Ion Chemistry</a>
+  <a href="#conduction">Conduction</a>
+  <a href="#mechanism">Mechanism</a>
+  <a href="#theories">Theories</a>
+  <a href="#classification">Classification</a>
+  <a href="#pka">pKa &amp; pH</a>
+  <a href="#active">Active Forms</a>
+  <a href="#kinetics">Kinetics</a>
+  <a href="#tachyphylaxis">Tachyphylaxis</a>
+  <a href="#fibres">Nerve Fibres</a>
+  <a href="#quiz">Exam Quiz</a>
+</nav>
+
+<div class="hero">
+  <div class="htag">BDS 3rd Year · Dental Pharmacology · Exam Tomorrow</div>
+  <h1>Chapter 1 — Neurophysiology<br>of Local Anesthetics</h1>
+  <p>Complete exam-oriented study guide. Every fact, number, and mechanism you need to write in tomorrow's paper.</p>
+  <div class="hstats">
+    <div class="hs"><div class="hs-n">−70</div><div class="hs-l">mV Resting</div></div>
+    <div class="hs"><div class="hs-n">+40</div><div class="hs-l">mV Peak Depol.</div></div>
+    <div class="hs"><div class="hs-n">1 ms</div><div class="hs-l">Full AP Cycle</div></div>
+    <div class="hs"><div class="hs-n">8–10</div><div class="hs-l">mm Block Needed</div></div>
+    <div class="hs"><div class="hs-n">−15</div><div class="hs-l">mV Firing Threshold</div></div>
+    <div class="hs"><div class="hs-n">7.4</div><div class="hs-l">Normal Tissue pH</div></div>
+  </div>
+</div>
+
+<!-- ===== DEFINITION ===== -->
+<section id="def">
+<div class="con">
+  <div class="sl">Section 01</div>
+  <h2 class="st">Definition of Local Anesthesia</h2>
+  <p class="ss">Write this definition verbatim in any long-answer question about local anesthetics.</p>
+  <div class="div"></div>
+
+  <div class="dc">
+    <div class="dt">Standard Definition (Covino &amp; Vassallo, 1976)</div>
+    <div class="dd">Local anesthesia is defined as <strong>loss of sensation in a circumscribed area of the body</strong> caused by <strong>depression of excitation in nerve endings</strong> or <strong>inhibition of the conduction process in peripheral nerves</strong>. An important feature is that it produces this loss of sensation <strong>without inducing loss of consciousness</strong>.</div>
+  </div>
+
+  <div class="kp">
+    <div class="ki">⚡</div>
+    <div class="kt">Key exam point: <strong>Local anesthesia ≠ General anesthesia</strong> — the single most important distinguishing feature is that <strong>consciousness is preserved</strong>. This must be stated in any definition-based question.</div>
+  </div>
+
+  <h3>Methods to Induce Local Anesthesia (6 Methods)</h3>
+  <div class="dc">
+    <div class="dt">Enumerate in order</div>
+    <div class="dd">
+      1. <strong>Mechanical trauma</strong> (compression of tissues)<br>
+      2. <strong>Low temperature</strong><br>
+      3. <strong>Anoxia</strong><br>
+      4. <strong>Chemical irritants</strong><br>
+      5. <strong>Neurolytic agents</strong> — alcohol and phenol<br>
+      6. <strong>Chemical agents</strong> — local anesthetics<br><br>
+      <em>Only methods that induce a <strong>transient and completely reversible</strong> state of anesthesia have clinical application.</em>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== PROPERTIES ===== -->
+<section id="properties">
+<div class="con">
+  <div class="sl">Section 02</div>
+  <h2 class="st">Desirable Properties of Local Anesthetics <span class="tag">High Yield</span></h2>
+  <p class="ss">Exam frequently asks: "Enumerate and discuss the ideal properties of a local anesthetic."</p>
+  <div class="div"></div>
+
+  <div class="ea">
+    <div>⚠️</div>
+    <div><strong>Exam Tip:</strong> There are two lists — 6 properties (standard) and 4 additional properties (Bennett). Learn both sets and which ones most clinical agents fail to meet.</div>
+  </div>
+
+  <h3>Primary 6 Desirable Properties</h3>
+  <div class="cg">
+    <div class="card"><div class="ct">1. Non-irritating to tissues</div><div class="cb">Must not cause local tissue damage at site of injection. <strong>Most clinical agents satisfy this.</strong></div></div>
+    <div class="card"><div class="ct">2. No permanent nerve damage</div><div class="cb">Effects must be <strong>completely reversible</strong>. No permanent alteration of nerve structure. Most agents satisfy this.</div></div>
+    <div class="card"><div class="ct">3. Low systemic toxicity <span class="tag tag-r">Paramount</span></div><div class="cb">All injectable + most topical agents are absorbed into the cardiovascular system. Toxicity <strong>varies greatly among agents</strong>. Most important property.</div></div>
+    <div class="card"><div class="ct">4. Effective by injection AND topically</div><div class="cb"><strong>Not all agents meet this.</strong> Procaine, mepivacaine — poor topical agents. Lidocaine, tetracaine — effective both ways. Dyclonine = potent topical, NOT injectable (tissue-irritating).</div></div>
+    <div class="card"><div class="ct">5. Rapid onset</div><div class="cb">Time from injection to complete blockade should be minimal. Related to pKa of the drug. <strong>Most clinical agents meet this.</strong></div></div>
+    <div class="card"><div class="ct">6. Adequate duration</div><div class="cb">Long enough to complete the procedure; not so long as to require extended recovery. Varies considerably among drugs and injection types.</div></div>
+  </div>
+
+  <h3>4 Additional Properties (Bennett)</h3>
+  <div class="cg">
+    <div class="card"><div class="ct">Sufficient potency</div><div class="cb">Complete anesthesia without harmful concentrated solutions.</div></div>
+    <div class="card"><div class="ct">Non-allergenic</div><div class="cb">Relatively free from producing allergic reactions. Esters carry higher allergy risk.</div></div>
+    <div class="card"><div class="ct">Stable + undergoes biotransformation</div><div class="cb">Stable in solution; readily metabolised in the body.</div></div>
+    <div class="card"><div class="ct">Sterilizable by heat</div><div class="cb">Without deterioration.</div></div>
+  </div>
+
+  <div class="kp">
+    <div class="ki">📌</div>
+    <div class="kt"><strong>No local anesthetic in current use satisfies ALL desirable criteria.</strong> However, all meet most of them. Research continues to maximize desirable factors and minimize negative ones.</div>
+  </div>
+</div>
+</section>
+
+<!-- ===== NEURON ===== -->
+<section id="neuron">
+<div class="con">
+  <div class="sl">Section 03</div>
+  <h2 class="st">The Neuron — Structure</h2>
+  <p class="ss">Neuron anatomy forms the basis for understanding where and how local anesthetics act.</p>
+  <div class="div"></div>
+
+  <div class="dc">
+    <div class="dt">Core Principle</div>
+    <div class="dd">Local anesthetics prevent <strong>both the generation AND conduction</strong> of a nerve impulse. They set up a chemical roadblock between the pain source and brain. The aborted impulse, prevented from reaching the brain, cannot be interpreted as pain.</div>
+  </div>
+
+  <div class="two">
+    <div class="box box-e">
+      <div class="box-label">Sensory (Afferent) Neuron — 3 Parts</div>
+      <ul>
+        <li><strong>Peripheral process (dendritic zone):</strong> Free nerve endings — most distal; detect stimuli</li>
+        <li><strong>Axon:</strong> Long cable; transmits impulse centrally to CNS</li>
+        <li><strong>Cell body:</strong> Located away from axon; provides metabolic support ONLY — NOT involved in impulse transmission</li>
+      </ul>
+    </div>
+    <div class="box box-a">
+      <div class="box-label">Motor (Efferent) Neuron</div>
+      <ul>
+        <li>Cell body is <strong>interposed between axon and dendrites</strong></li>
+        <li>Cell body is integral to impulse transmission (unlike sensory)</li>
+        <li>Axon branches near termination → bulbous <strong>axon terminals (boutons)</strong></li>
+        <li>Boutons synapse with <strong>skeletal muscle at motor end plate</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>The Axon</h3>
+  <div class="cg">
+    <div class="card"><div class="ct">Structure</div><div class="cb">Long cylinder of neural cytoplasm (<strong>axoplasm</strong>) enclosed in thin sheath — the <strong>nerve membrane (axolemma)</strong>. Axoplasm separated from extracellular fluid by a continuous nerve membrane.</div></div>
+    <div class="card"><div class="ct">Importance</div><div class="cb">Both sensory nerve excitability and conduction are attributable to <strong>changes in the nerve membrane</strong>. Cell body and axoplasm are NOT essential for conduction — they provide metabolic support for the membrane.</div></div>
+    <div class="card"><div class="ct">Myelin</div><div class="cb">Some nerves covered by insulating <strong>lipid-rich myelin layer</strong>. Enables myelinated nerves to conduct at much faster rates than unmyelinated nerves of equal size. Myelin = <strong>75% lipid, 20% protein, 5% carbohydrate</strong>.</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ===== MEMBRANE ===== -->
+<section id="membrane">
+<div class="con">
+  <div class="sl">Section 04</div>
+  <h2 class="st">Nerve Membrane — Structure &amp; Channels <span class="tag">Exam Favourite</span></h2>
+  <p class="ss">Detailed membrane structure is commonly asked in short answer and essay questions.</p>
+  <div class="div"></div>
+
+  <div class="dc">
+    <div class="dt">Membrane Structure</div>
+    <div class="dd">
+      • Thickness: <strong>70–80 Å</strong> (1 Å = 1/10,000 of a micrometer)<br>
+      • Flexible, nonstretchable structure<br>
+      • Two layers of lipid molecules = <strong>bilipid layer of phospholipids</strong><br>
+      • Lipids oriented with <strong>hydrophilic (polar) ends facing outward</strong> and <strong>hydrophobic (nonpolar) tails facing inward</strong> (middle)<br>
+      • Proteins are primary organizational elements: classified as <strong>transport proteins</strong> (channels, carriers, pumps) and <strong>receptor sites</strong>
+    </div>
+  </div>
+
+  <div class="cg">
+    <div class="card">
+      <div class="ct">Channel Proteins</div>
+      <div class="cb">Continuous pores through the membrane. Allow some ions (Na⁺, K⁺, Ca²⁺) to flow <strong>passively</strong>. Some channels are <strong>gated</strong> — permit ion flow only when gate is open. Na⁺ channel internal diameter: <strong>0.3–0.5 nm</strong>. Na⁺ passes through 12 times more easily than K⁺.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Resting Membrane Resistance</div>
+      <div class="cb">Resting nerve membrane has electrical resistance <strong>~50 times greater</strong> than intracellular and extracellular fluids. Prevents Na⁺, K⁺, Cl⁻ from passing down their gradients. During impulse, conductivity increases approximately <strong>100-fold</strong>.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Hydrated Ion Sizes — Why Na⁺ Can't Enter at Rest</div>
+      <div class="cb">All ions attract water → become hydrated.<br><strong>Hydrated Na⁺ radius = 3.4 Å</strong><br>Hydrated K⁺ and Cl⁻ radius = <strong>2.2 Å</strong><br>Na⁺ is ~50% larger. Too large to pass through narrow resting channels. K⁺ and Cl⁻ can pass freely.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Sodium Channel Gates</div>
+      <div class="cb">Sodium channel gates are located near the <strong>external surface</strong> of the nerve membrane. Potassium channel gates are located near the <strong>internal surface</strong>. This asymmetry is clinically significant for drug binding.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== ACTION POTENTIAL ===== -->
+<section id="ap">
+<div class="con">
+  <div class="sl">Section 05</div>
+  <h2 class="st">Action Potential — Electrophysiology <span class="tag">High Yield</span></h2>
+  <p class="ss">Must know all values, stages, and timing for short answer and MCQ questions.</p>
+  <div class="div"></div>
+
+  <div class="apv">
+    <div class="apvt">Action Potential — Four Phases with Exact Values</div>
+    <div class="apf">
+      <div class="app r"><div class="apl">Resting State</div><div class="apm">−70 mV</div><div class="apd">Interior negative. Membrane impermeable to Na⁺ at rest.</div></div>
+      <div class="app sd"><div class="apl">Step 1A–B: Slow Depol.</div><div class="apm">−50 to −60 mV</div><div class="apd">Na⁺ channels begin opening. Threshold = −55 mV. Need ↓15 mV.</div></div>
+      <div class="app rd"><div class="apl">Step 1C: Rapid Depol.</div><div class="apm">+40 mV</div><div class="apd">Massive Na⁺ influx. Interior becomes POSITIVE. 0.3 ms duration.</div></div>
+      <div class="app rp"><div class="apl">Step 2: Repolarization</div><div class="apm">−70 mV</div><div class="apd">Na⁺ permeability inactivated. K⁺ efflux. Returns to −70 mV. 0.7 ms.</div></div>
+    </div>
+  </div>
+
+  <div class="ea"><div>📝</div><div><strong>Exact values to write in exam:</strong> Resting = −70 mV | Firing threshold = −50 to −60 mV | Voltage change needed = 15 mV | Peak depolarization = +40 mV | Total cycle = 1 ms (Depol = 0.3 ms, Repol = 0.7 ms)</div></div>
+
+  <h3>Sodium Channel States — C, O, I <span class="tag">MCQ Favourite</span></h3>
+  <ul class="steps">
+    <li class="step">
+      <span class="sn">C</span>
+      <div class="sc">
+        <div class="stit">Closed State — Resting</div>
+        <div class="stxt">Nonconducting. Channels are in this state when membrane is at −70 mV. <strong>Voltage-responsive</strong> — can be recruited to Open state by depolarization. This is the normal resting configuration.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">O</span>
+      <div class="sc">
+        <div class="stit">Open State — Depolarization</div>
+        <div class="stxt">Ion-conducting state. Na⁺ rapidly enters axoplasm. Occurs during depolarization. Configurational changes produce transient widening of transmembrane channels to allow hydrated Na⁺ to pass (C → O transformation).</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">I</span>
+      <div class="sc">
+        <div class="stit">Inactive State — Absolute Refractory Period</div>
+        <div class="stxt">Nonconducting. Key difference from C state: <strong>depolarization CANNOT recruit channels from I state to O state</strong>. Only C → O is possible. Channels are "locked" in this state temporarily. This is the basis of the <strong>absolute refractory period</strong>. Slowly converts back to C state with repolarization.</div>
+      </div>
+    </li>
+  </ul>
+
+  <h3>Refractory Periods</h3>
+  <div class="two">
+    <div class="card">
+      <div class="ct">Absolute Refractory Period</div>
+      <div class="cb">Immediately after stimulus. Nerve is <strong>unable to respond to any stimulus regardless of strength</strong>. Corresponds to the I (inactive) state of Na⁺ channels. Lasts for about the duration of the main part of the action potential.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Relative Refractory Period</div>
+      <div class="cb">Follows absolute refractory period. A new impulse <strong>can be initiated, but only by a stronger-than-normal stimulus</strong>. Continues to decrease until normal excitability returns — at which point the nerve is said to be <strong>repolarized</strong>.</div>
+    </div>
+  </div>
+
+  <h3>Sodium Pump — Active Transport</h3>
+  <div class="dc">
+    <div class="dt">After repolarization</div>
+    <div class="dd">
+      After return to −70 mV, slight excess Na⁺ exists intracellularly and slight excess K⁺ extracellularly. Active transport then occurs:<br>
+      • <strong>Na⁺ pumped OUT</strong> of cell against concentration gradient<br>
+      • <strong>K⁺ pumped IN</strong> against concentration gradient<br>
+      • Energy source: <strong>oxidative metabolism of adenosine triphosphate (ATP)</strong><br>
+      • Movement of Na⁺ during depolarization and K⁺ during repolarization is <strong>passive</strong> (down concentration gradients — no energy needed)<br>
+      • Process of repolarization requires <strong>0.7 milliseconds</strong>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== ION CHEMISTRY ===== -->
+<section id="ions">
+<div class="con">
+  <div class="sl">Section 06</div>
+  <h2 class="st">Electrochemistry — Ionic Concentrations <span class="tag">Memorise Numbers</span></h2>
+  <p class="ss">These exact values appear in MCQs. Know the intracellular vs. extracellular concentrations and ratios.</p>
+  <div class="div"></div>
+
+  <div class="ig">
+    <div class="ic">
+      <div class="is">K⁺</div>
+      <div class="iv">
+        <div><div class="ivn">110–170</div><div class="ivl">Intracell (mEq/L)</div></div>
+        <div><div class="ivn">3–5</div><div class="ivl">Extracell (mEq/L)</div></div>
+      </div>
+      <div class="ir">Ratio 27:1 inside</div>
+    </div>
+    <div class="ic">
+      <div class="is">Na⁺</div>
+      <div class="iv">
+        <div><div class="ivn">5–10</div><div class="ivl">Intracell (mEq/L)</div></div>
+        <div><div class="ivn">140</div><div class="ivl">Extracell (mEq/L)</div></div>
+      </div>
+      <div class="ir">Ratio 1:14 outside</div>
+    </div>
+    <div class="ic">
+      <div class="is">Cl⁻</div>
+      <div class="iv">
+        <div><div class="ivn">5–10</div><div class="ivl">Intracell (mEq/L)</div></div>
+        <div><div class="ivn">110</div><div class="ivl">Extracell (mEq/L)</div></div>
+      </div>
+      <div class="ir">Ratio 1:11 outside</div>
+    </div>
+  </div>
+
+  <h3>Behaviour of Each Ion at Rest</h3>
+  <div class="cg">
+    <div class="card">
+      <div class="ct">K⁺ — Stays Inside Despite Gradient</div>
+      <div class="cb">Membrane freely permeable to K⁺. Concentration gradient favours efflux (high inside). BUT the <strong>negative charge of the membrane restrains the positively charged K⁺ by electrostatic attraction</strong>. Net result: K⁺ remains inside.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Cl⁻ — Stays Outside Despite Gradient</div>
+      <div class="cb">Membrane freely permeable to Cl⁻. Concentration gradient favours influx (high outside). BUT an <strong>opposing nearly equal electrostatic gradient forces outward migration</strong>. Net result: no diffusion of Cl⁻ through membrane.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Na⁺ — Blocked by Impermeability</div>
+      <div class="cb">Both concentration gradient (greater outside) AND electrostatic gradient (positive ion attracted inward) favour influx. Only <strong>relative impermeability of the resting membrane to Na⁺ prevents massive influx</strong>. Hydrated Na⁺ (3.4 Å) > channel width at rest.</div>
+    </div>
+  </div>
+
+  <div class="kp">
+    <div class="ki">🔬</div>
+    <div class="kt">Safety factor for conduction: <strong>5–6 times</strong> the minimum Na⁺ permeability required. Local anesthetics selectively inhibit peak Na⁺ permeability, reducing this safety factor. When safety factor falls <strong>below unity (1.0)</strong>, conduction fails and nerve block occurs.</div>
+  </div>
+</div>
+</section>
+
+<!-- ===== CONDUCTION ===== -->
+<section id="conduction">
+<div class="con">
+  <div class="sl">Section 07</div>
+  <h2 class="st">Impulse Propagation &amp; Saltatory Conduction <span class="tag">Essay Question</span></h2>
+  <p class="ss">Commonly asked as "describe the spread of impulse in myelinated vs unmyelinated nerves."</p>
+  <div class="div"></div>
+
+  <div class="two">
+    <div class="box box-e">
+      <div class="box-label">Unmyelinated Nerve Conduction</div>
+      <ul>
+        <li>Impulse spreads by <strong>sequential depolarization of short adjoining membrane segments</strong></li>
+        <li>Characterized as a <strong>slow forward-creeping process</strong></li>
+        <li>Conduction rate: <strong>C fibres = 1.2 m/s</strong></li>
+        <li>High-resistance membrane + low-resistance axoplasm/extracellular fluid = rapid current density decrease with distance</li>
+        <li>Local current only adequate to depolarize immediately adjacent membrane</li>
+      </ul>
+    </div>
+    <div class="box box-a">
+      <div class="box-label">Myelinated Nerve — Saltatory Conduction</div>
+      <ul>
+        <li><em>Saltare</em> = Latin for "to leap"</li>
+        <li>Current leaps from <strong>node of Ranvier to node of Ranvier</strong></li>
+        <li>Much <strong>faster and more energy efficient</strong></li>
+        <li>Conduction rate: <strong>Aα and Aδ = 14.8–120 m/s</strong></li>
+        <li>Thicker axon = greater distance between nodes = more rapid saltatory conduction</li>
+        <li>Impulse can skip 1–2 blocked nodes — therefore <strong>minimum 8–10 mm of nerve must be blocked</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Backward Propagation — Why It Doesn't Happen</h3>
+  <div class="dc">
+    <div class="dt">Unidirectional Propagation</div>
+    <div class="dd">After a segment depolarizes, it enters the <strong>absolute and relative refractory periods</strong>. Backward (retrograde) movement of the wave of depolarization is prevented by the <strong>unexcitable, refractory segment</strong> behind the impulse. The wave therefore travels only in one direction.</div>
+  </div>
+</div>
+</section>
+
+<!-- ===== MECHANISM ===== -->
+<section id="mechanism">
+<div class="con">
+  <div class="sl">Section 08</div>
+  <h2 class="st">Mechanism of Action — How LAs Block Nerve Conduction <span class="tag">High Yield</span></h2>
+  <p class="ss">The 8-step proposed mechanism must be memorized for long-answer questions.</p>
+  <div class="div"></div>
+
+  <div class="dc">
+    <div class="dt">Ways Local Anesthetics Interfere with Excitation</div>
+    <div class="dd">
+      1. Altering the <strong>basic resting potential</strong> of the nerve membrane<br>
+      2. Altering the <strong>threshold potential</strong> (firing level)<br>
+      3. <strong>Decreasing the rate of depolarization</strong><br>
+      4. Prolonging the rate of repolarization<br><br>
+      <strong>Established fact:</strong> Primary effects occur during the <strong>depolarization phase</strong>. Main effect = decrease in rate of depolarization (especially slow depolarization phase). <strong>No accompanying change in the rate of repolarization</strong>. The resting potential is <strong>unaltered</strong> by local anesthetics (they do not hyperpolarize).
+    </div>
+  </div>
+
+  <div class="ms">
+    <div class="mst">8-Step Proposed Mechanism of Action (Covino &amp; Vassallo)</div>
+    <div class="msi"><span class="msn">01</span><span class="msd"><strong>Displacement of Ca²⁺ ions</strong> from the sodium channel receptor site — Ca²⁺ normally exerts a regulatory effect on Na⁺ movement; its release is the first step in depolarization</span></div>
+    <div class="msi"><span class="msn">02</span><span class="msd"><strong>Binding of the local anesthetic molecule</strong> to this receptor site on the sodium channel — RNH⁺ enters from the axoplasmic (internal) side</span></div>
+    <div class="msi"><span class="msn">03</span><span class="msd"><strong>Blockade of the sodium channel</strong> — channel rendered impermeable (plugged state)</span></div>
+    <div class="msi"><span class="msn">04</span><span class="msd"><strong>Decrease in sodium conductance</strong> through the nerve membrane</span></div>
+    <div class="msi"><span class="msn">05</span><span class="msd"><strong>Depression of the rate of electrical depolarization</strong> — particularly the slow depolarization phase</span></div>
+    <div class="msi"><span class="msn">06</span><span class="msd"><strong>Failure to achieve the threshold potential level</strong> — the −15 mV reduction from resting potential cannot be achieved</span></div>
+    <div class="msi"><span class="msn">07</span><span class="msd"><strong>Lack of development of propagated action potentials</strong> — local currents do not develop; the membrane's electrical potential remains unchanged</span></div>
+    <div class="msi"><span class="msn">08</span><span class="msd"><strong>Conduction blockade</strong> — this is termed a <strong>nondepolarizing nerve block</strong></span></div>
+  </div>
+
+  <div class="kp">
+    <div class="ki">📌</div>
+    <div class="kt"><strong>Nondepolarizing nerve block</strong> — the membrane remains in a polarized state because the ionic movements responsible for the action potential fail to develop. The self-perpetuating mechanism of impulse propagation is stalled.</div>
+  </div>
+</div>
+</section>
+
+<!-- ===== THEORIES ===== -->
+<section id="theories">
+<div class="con">
+  <div class="sl">Section 09</div>
+  <h2 class="st">Theories of Mechanism of Action <span class="tag">Essay Favourite</span></h2>
+  <p class="ss">"Discuss the theories of mechanism of action of local anesthetics" — classic essay question. Know all theories, their basis, and their limitations.</p>
+  <div class="div"></div>
+
+  <div class="ea"><div>⚠️</div><div><strong>Exam Tip:</strong> Know which theories are outdated/discredited and why. Know which is the most accepted. Specific receptor theory = most favoured today.</div></div>
+
+  <ul class="steps">
+    <li class="step">
+      <span class="sn">1</span>
+      <div class="sc">
+        <div class="stit">Acetylcholine Theory — DISCREDITED</div>
+        <div class="stxt">States acetylcholine (ACh) is involved in nerve conduction along the axon body (in addition to its role as neurotransmitter at synapses). <strong>Limitation:</strong> No evidence exists that ACh is involved in neural transmission along the body of the neuron. Discredited.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">2</span>
+      <div class="sc">
+        <div class="stit">Calcium Displacement Theory — LARGELY DISCREDITED</div>
+        <div class="stxt">Local anesthetic nerve block produced by <strong>displacement of Ca²⁺ from a membrane site that controls Na⁺ permeability</strong>. Was once popular. <strong>Limitation:</strong> Varying the concentration of calcium ions bathing a nerve does NOT affect local anesthetic potency — this evidence diminished its credibility.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">3</span>
+      <div class="sc">
+        <div class="stit">Surface Charge (Repulsion) Theory — LIMITED</div>
+        <div class="stxt">Cationic (RNH⁺) drug molecules align at the membrane–water interface. Their net positive charge makes the membrane surface more positive → decreases nerve excitability by increasing threshold potential. <strong>Limitation:</strong> Cannot explain activity of uncharged molecules (e.g., benzocaine). Resting potential remains unaltered by LAs — does not support this theory. Conventional LAs act within channels, not at surface.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">4</span>
+      <div class="sc">
+        <div class="stit">Membrane Expansion Theory — PARTIALLY ACCEPTED</div>
+        <div class="stxt">Highly lipid-soluble LA molecules diffuse to <strong>hydrophobic regions of excitable membranes</strong>, producing general disturbance of bulk membrane structure → <strong>expanding critical membrane regions</strong> → decreased diameter of sodium channels → inhibition of Na⁺ conductance and neural excitation. Explains benzocaine activity. Nerve membranes do expand when exposed to LAs. <strong>Limitation:</strong> No direct evidence that conduction is entirely blocked by membrane expansion alone.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">5</span>
+      <div class="sc">
+        <div class="stit">Specific Receptor Theory — MOST ACCEPTED ✓</div>
+        <div class="stxt">Local anesthetics act by <strong>binding to specific receptors on the sodium channel</strong>. Action is direct — not mediated by changes in general membrane properties. Both biochemical and electrophysiological studies confirm a <strong>specific receptor site (R-LA) in the sodium channel</strong> either on its external surface or internal axoplasmic surface. Once LA gains access to receptors, Na⁺ permeability is decreased or eliminated → nerve conduction interrupted. ~90% blocking effect via cationic form (RNH⁺); ~10% via base form (RN) — accounts for Class D drugs.</div>
+      </div>
+    </li>
+  </ul>
+
+  <h3>Sites Within the Sodium Channel</h3>
+  <div class="wrap">
+    <table>
+      <thead><tr><th>Drug/Substance</th><th>Site of Action</th><th>Classification</th></tr></thead>
+      <tbody>
+        <tr class="hrow"><td><strong>Lidocaine, articaine, mepivacaine, prilocaine, bupivacaine</strong></td><td>Within the sodium channel — receptor R-LA (internal/axoplasmic)</td><td>Class D</td></tr>
+        <tr><td>Tetrodotoxin, saxitoxin</td><td>Outer surface of sodium channel — receptor R-T</td><td>Class A</td></tr>
+        <tr><td>Centruroides scorpion venom</td><td>Activation gate</td><td>Class B</td></tr>
+        <tr><td>Leirus scorpion venom, sea anemone venom</td><td>Inactivation gate</td><td>Class B</td></tr>
+        <tr><td>Benzocaine</td><td>Membrane expansion — receptor R-B</td><td>Class C</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ===== CLASSIFICATION ===== -->
+<section id="classification">
+<div class="con">
+  <div class="sl">Section 10</div>
+  <h2 class="st">Classification of Local Anesthetics <span class="tag">Memorise</span></h2>
+  <p class="ss">Two classification systems: (1) Biological site of action (A/B/C/D) and (2) Chemical structure (ester vs. amide).</p>
+  <div class="div"></div>
+
+  <h3>Biological Classification (Covino &amp; Vassallo)</h3>
+  <div class="wrap">
+    <table>
+      <thead><tr><th>Class</th><th>Mechanism</th><th>Active Form</th><th>Examples</th></tr></thead>
+      <tbody>
+        <tr><td class="hi">A</td><td>Receptor on <strong>external surface</strong> of nerve membrane</td><td>Charged or neutral</td><td>Tetrodotoxin, saxitoxin (biotoxins)</td></tr>
+        <tr><td class="hi">B</td><td>Receptor on <strong>internal surface</strong> of nerve membrane</td><td>Charged (RNH⁺)</td><td>Quaternary ammonium analogues of lidocaine; scorpion venom</td></tr>
+        <tr class="hrow"><td class="hi">C</td><td>Receptor-independent <strong>physicochemical mechanism</strong> (membrane expansion)</td><td>Uncharged only (RN)</td><td><strong>Benzocaine</strong></td></tr>
+        <tr class="hrow"><td class="hi">D</td><td><strong>Combination</strong> of receptor + receptor-independent; 90% cationic, 10% base</td><td>Both RNH⁺ and RN</td><td><strong>All major clinical agents:</strong> Articaine, bupivacaine, lidocaine, mepivacaine, prilocaine</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Chemical Classification: Esters vs. Amides</h3>
+  <div class="two">
+    <div class="box box-e">
+      <div class="box-label">Amino Esters — Linkage: -COO-</div>
+      <ul>
+        <li><strong>Biotransformation:</strong> Hydrolysed rapidly in <strong>plasma by cholinesterase</strong> (aqueous solution)</li>
+        <li><strong>Procaine</strong> hydrolysed in plasma in <strong>a few minutes</strong></li>
+        <li><strong>Allergy risk:</strong> Higher — metabolite is PABA (para-aminobenzoic acid)</li>
+        <li><strong>Excretion:</strong> Smaller % excreted unchanged in urine</li>
+        <li><strong>Agents:</strong> Procaine, tetracaine, chloroprocaine, benzocaine, cocaine, propoxycaine</li>
+        <li><em>Mnemonic: "PCAT-B" — Procaine, Chloroprocaine, Articaine, Tetracaine, Benzocaine (but articaine is amide!)</em></li>
+      </ul>
+    </div>
+    <div class="box box-a">
+      <div class="box-label">Amino Amides — Linkage: -NHCO-</div>
+      <ul>
+        <li><strong>Biotransformation:</strong> Relatively resistant to hydrolysis; metabolised in <strong>liver</strong></li>
+        <li>~10% of <strong>procainamide</strong> hydrolysed in 1 day (vs. procaine in minutes)</li>
+        <li><strong>Allergy risk:</strong> Lower</li>
+        <li><strong>Excretion:</strong> Greater % excreted unchanged in urine</li>
+        <li><strong>Agents:</strong> Lidocaine, mepivacaine, prilocaine, bupivacaine, articaine, ropivacaine, etidocaine</li>
+        <li><em>Mnemonic: All amides have double "i": LIdocaIne, MepIvacaIne, BupIvacaIne, PrIlocaIne</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dc" style="margin-top:1.5rem;">
+    <div class="dt">Typical Local Anesthetic Structure — 3 Parts</div>
+    <div class="dd">
+      1. <strong>Lipophilic part</strong> (largest portion) — aromatic in structure; derived from benzoic acid, aniline, or thiophene (articaine only). Determines lipid solubility and potency.<br>
+      2. <strong>Intermediate hydrocarbon chain</strong> — contains either an ester or amide linkage. Determines ester/amide classification.<br>
+      3. <strong>Hydrophilic part</strong> — amino derivative of ethyl alcohol or acetic acid. Determines water solubility and ability to be injected.<br><br>
+      <strong>All local anesthetics are amphipathic</strong> — possess both lipophilic and hydrophilic characteristics at opposite ends of the molecule.<br><br>
+      Drugs without a hydrophilic part (e.g., <strong>benzocaine</strong>) — not suitable for injection but excellent topical anesthetics.
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== pKa & pH ===== -->
+<section id="pka">
+<div class="con">
+  <div class="sl">Section 11</div>
+  <h2 class="st">pKa, Dissociation &amp; pH Effects <span class="tag">High Yield</span></h2>
+  <p class="ss">"Explain the role of pH in local anesthetic activity" — very common exam question including in endodontics context.</p>
+  <div class="div"></div>
+
+  <div class="dc">
+    <div class="dt">Henderson-Hasselbalch Equation</div>
+    <div class="dd">
+      <strong>pH = pKa + log [conjugate base (RN)] / [acid (RNH⁺)]</strong><br><br>
+      In solution: <strong>RNH⁺ ⇌ RN + H⁺</strong><br><br>
+      • When pH = pKa: exactly <strong>50% RNH⁺ and 50% RN</strong><br>
+      • Low pH (acidic) → equilibrium shifts LEFT → more <strong>RNH⁺</strong> (cation; hydrophilic; cannot cross membrane)<br>
+      • High pH (alkaline) → equilibrium shifts RIGHT → more <strong>RN</strong> (free base; lipophilic; diffuses through sheath)<br><br>
+      <strong>pKa = dissociation constant</strong> = measure of a molecule's affinity for H⁺. Lower pKa = more RN at tissue pH 7.4 = faster onset.
+    </div>
+  </div>
+
+  <div class="ea"><div>📝</div><div><strong>Two-factor action:</strong> (1) RN (free base) — lipid-soluble, diffuses through nerve sheath. (2) RNH⁺ (cation) — binds receptor site inside sodium channel from axoplasmic side. Both forms are needed. Diffusibility through sheath is the RATE-LIMITING STEP clinically.</div></div>
+
+  <h3>pKa Table — Memorise These Values <span class="tag">MCQ</span></h3>
+  <div class="wrap">
+    <table>
+      <thead><tr><th>Agent</th><th>Type</th><th>pKa</th><th>% Base (RN) at pH 7.4</th><th>Onset</th><th>Protein Binding (%)</th><th>Duration</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Benzocaine</strong></td><td>Ester</td><td class="hi">3.5</td><td>100%</td><td>Topical only</td><td>—</td><td>—</td></tr>
+        <tr class="hrow"><td><strong>Lidocaine</strong></td><td>Amide</td><td class="hi">7.7</td><td>29%</td><td>Fast (2–4 min)</td><td>65</td><td>Moderate</td></tr>
+        <tr class="hrow"><td><strong>Mepivacaine</strong></td><td>Amide</td><td class="hi">7.7</td><td>33%</td><td>Fast (2–4 min)</td><td>75</td><td>Moderate</td></tr>
+        <tr class="hrow"><td><strong>Prilocaine</strong></td><td>Amide</td><td class="hi">7.7</td><td>25%</td><td>Fast (2–4 min)</td><td>55</td><td>Moderate</td></tr>
+        <tr class="hrow"><td><strong>Articaine</strong></td><td>Amide</td><td class="hi">7.8</td><td>29%</td><td>Fast (2–4 min)</td><td>95</td><td>Moderate</td></tr>
+        <tr><td><strong>Etidocaine</strong></td><td>Amide</td><td class="hi">7.9</td><td>25%</td><td>Fast (2–4 min)</td><td>94</td><td>Long</td></tr>
+        <tr><td><strong>Ropivacaine</strong></td><td>Amide</td><td class="hi">8.1</td><td>17%</td><td>Moderate (2–4 min)</td><td>94</td><td>Long</td></tr>
+        <tr><td><strong>Bupivacaine</strong></td><td>Amide</td><td class="hi">8.1</td><td>17%</td><td>Moderate (5–8 min)</td><td>95</td><td>Long</td></tr>
+        <tr><td><strong>Tetracaine</strong></td><td>Ester</td><td class="hi">8.6</td><td>7%</td><td>Slow (10–15 min)</td><td>85</td><td>Long</td></tr>
+        <tr><td><strong>Cocaine</strong></td><td>Ester</td><td class="hi">8.6</td><td>7%</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td><strong>Chloroprocaine</strong></td><td>Ester</td><td class="hi">8.7</td><td>6%</td><td>Fast (6–12 min)</td><td>NA</td><td>Short</td></tr>
+        <tr><td><strong>Procaine</strong></td><td>Ester</td><td class="hi">9.1</td><td>2%</td><td>Slow (14–18 min)</td><td>5</td><td>Short</td></tr>
+        <tr><td><strong>Procainamide</strong></td><td>Amide</td><td class="hi">9.3</td><td>1%</td><td>—</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Effect of Inflammation on Local Anesthetic Activity <span class="tag">Endodontics Context</span></h3>
+  <div class="dc">
+    <div class="dt">Why LAs Fail in Inflamed/Infected Tissue</div>
+    <div class="dd">
+      • <strong>Normal tissue pH: 7.4</strong> → ~25% molecules as RN (e.g., for drug with pKa 7.9 → 250 RN per 1000 molecules can cross nerve sheath)<br>
+      • <strong>Inflamed tissue pH: 5–6</strong> → ~99% molecules as RNH⁺ → only ~1% as RN (~10 RN per 1000 molecules cross sheath)<br>
+      • <strong>Additionally:</strong> Increased vascularity in inflamed region → accelerated vascular absorption → drug removed from site faster<br>
+      • Result: Inadequate concentration of LA reaches nerve → anesthesia fails<br>
+      • <strong>Clinically most common in endodontics</strong> (pulpitis, periapical abscess)
+    </div>
+  </div>
+
+  <h3>pH of Commercial LA Solutions</h3>
+  <div class="cg">
+    <div class="card"><div class="ct">Plain solutions (no vasoconstrictor)</div><div class="cb">pH range: <strong>5.5–7</strong>. When injected, vast buffering capacity of tissues returns pH to 7.4. Plain lidocaine measured at pH <strong>6.00 ± 0.27</strong>.</div></div>
+    <div class="card"><div class="ct">Epinephrine-containing solutions</div><div class="cb">pH range: <strong>3.5–4.4</strong> (or as low as 2.8–5.5 for dental cartridges). Acidified by <strong>sodium bisulfite (0.05–0.1%)</strong> to prevent oxidation of epinephrine. 2% lidocaine with epi measured at pH <strong>3.93 ± 0.43</strong>.</div></div>
+    <div class="card"><div class="ct">Clinical effects of low pH solution</div><div class="cb">• <strong>Burning sensation on injection</strong><br>• <strong>Slightly slower onset</strong> (more time needed for tissue buffering to raise pH)<br>• More postinjection soreness at site</div></div>
+    <div class="card"><div class="ct">Buffering (Alkalinisation)</div><div class="cb">Adding <strong>sodium bicarbonate or CO₂</strong> before injection: elevates pH → more RN available → <strong>faster onset, greater comfort</strong>. However, LA base precipitates out of alkalinized solutions making storage impossible — must be done immediately before use.</div></div>
+  </div>
+
+  <h3>EMLA and Topical Anesthesia</h3>
+  <div class="dc">
+    <div class="dt">EMLA — Eutectic Mixture of Local Anesthetics</div>
+    <div class="dd">
+      • Contains: <strong>lidocaine + prilocaine</strong> (eutectic mixture)<br>
+      • Intact skin is normally impenetrable to topical LAs<br>
+      • EMLA achieves penetration through intact skin, <strong>albeit slowly</strong><br>
+      • Mucous membranes and injured skin (burns, abrasions) lack intact skin protection → topical LAs work here<br>
+      • Topical agents manufactured at <strong>higher concentrations (5–10% lidocaine)</strong> vs injectable (2% lidocaine) to provide adequate RN molecules despite low % at mucosal pH<br>
+      • Benzocaine is not ionized in solution → effectiveness unaffected by pH → used widely as topical (poor water solubility = minimal systemic absorption)
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== ACTIVE FORMS ===== -->
+<section id="active">
+<div class="con">
+  <div class="sl">Section 12</div>
+  <h2 class="st">Active Forms &amp; Actions on Nerve Membrane <span class="tag">Essay</span></h2>
+  <p class="ss">Detailed mechanism of how RN and RNH⁺ work — step-by-step answer for "how does a local anesthetic block a nerve?"</p>
+  <div class="div"></div>
+
+  <div class="dc">
+    <div class="dt">Why LAs Are Formulated as Acid Salts</div>
+    <div class="dd">
+      As prepared in lab: local anesthetics are basic compounds — <strong>poorly water-soluble, unstable on air exposure</strong>. pKa values range 7.5–10. Limited clinical value in pure form.<br><br>
+      Being weakly basic, they combine with acids to form <strong>local anesthetic salts</strong> — water-soluble and comparatively stable.<br><br>
+      Dispensed as <strong>acid salts (most commonly hydrochloride salt)</strong> dissolved in sterile water or saline — e.g., lidocaine hydrochloride, articaine hydrochloride.
+    </div>
+  </div>
+
+  <h3>Step-by-Step: How the Molecule Works (Exam Answer Format)</h3>
+  <ul class="steps">
+    <li class="step">
+      <span class="sn">1</span>
+      <div class="sc">
+        <div class="stit">Drug injected extracellularly (tissue pH 7.4)</div>
+        <div class="stxt">Example: drug with pKa 7.9. At pH 7.4: <strong>75% exists as RNH⁺ (charged cation)</strong> and <strong>25% exists as RN (free base)</strong>. From 1000 molecules → 250 RN molecules available.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">2</span>
+      <div class="sc">
+        <div class="stit">RN (free base) diffuses through nerve sheath</div>
+        <div class="stxt">The <strong>lipid-soluble, uncharged RN form</strong> diffuses through the lipid nerve sheath (axolemma). The charged RNH⁺ cannot cross the lipid barrier. All 250 RN molecules theoretically enter the axoplasm.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">3</span>
+      <div class="sc">
+        <div class="stit">Extracellular equilibrium re-established</div>
+        <div class="stxt">Loss of RN disrupts RNH⁺ ⇌ RN equilibrium extracellularly. Remaining 750 RNH⁺ re-equilibrate: 570 RNH⁺ + 180 RN. These 180 new RN molecules also diffuse inward. Process continues repeatedly.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">4</span>
+      <div class="sc">
+        <div class="stit">Re-equilibration inside the axoplasm</div>
+        <div class="stxt">Inside nerve, intracellular pH is also 7.4. RN cannot remain entirely as RN inside. <strong>75% of RN converts back to RNH⁺</strong>; 25% remains as RN. This conversion to RNH⁺ inside the cell is essential for activity.</div>
+      </div>
+    </li>
+    <li class="step">
+      <span class="sn">5</span>
+      <div class="sc">
+        <div class="stit">RNH⁺ binds receptor in sodium channel</div>
+        <div class="stxt">From the <strong>axoplasmic (internal) side</strong>, RNH⁺ ions enter the sodium channel and bind to the <strong>R-LA receptor site</strong>. The channel filter precludes direct entry from the external (extracellular) mouth. This produces conduction blockade.</div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="kp">
+    <div class="ki">💡</div>
+    <div class="kt">In practice: not all molecules reach the nerve interior because (1) diffusion is three-dimensional — not just toward the nerve; (2) some absorbed into capillaries and extracellular soft tissue at injection site; (3) ester anesthetics undergo enzymatic hydrolysis before reaching core fibres.</div>
+  </div>
+</div>
+</section>
+
+<!-- ===== KINETICS ===== -->
+<section id="kinetics">
+<div class="con">
+  <div class="sl">Section 13</div>
+  <h2 class="st">Kinetics — Onset, Duration &amp; Barriers to Diffusion</h2>
+  <p class="ss">Peripheral nerve anatomy related to diffusion barriers — asked in anatomy-pharmacology integrated questions.</p>
+  <div class="div"></div>
+
+  <h3>Organization of a Peripheral Nerve <span class="tag">Anatomy Exam</span></h3>
+  <div class="wrap">
+    <table>
+      <thead><tr><th>Layer (Outer → Inner)</th><th>Description</th><th>LA Relevance</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Epineural sheath</strong></td><td>Outer dense layer of epineurium</td><td><strong>NOT a barrier</strong> to diffusion</td></tr>
+        <tr><td><strong>Epineurium</strong></td><td>Loose areolar connective tissue; 30–75% of total nerve cross section. Contains nutrient blood vessels and lymphatics</td><td>Drugs diffuse readily. Vessels absorb drug → reduce concentration at nerve</td></tr>
+        <tr class="hrow"><td><strong>Perineurium</strong></td><td>Covers fasciculi. Thickness proportional to fasciculus diameter</td><td><strong>Main diffusion barrier.</strong> Thicker perineurium = slower diffusion</td></tr>
+        <tr class="hrow"><td><strong>Perilemma</strong></td><td>Innermost layer of perineurium; smooth mesothelial membrane</td><td><strong>Greatest anatomic barrier</strong> to diffusion into nerve</td></tr>
+        <tr><td><strong>Fasciculi</strong></td><td>Bundles of 500–1000 individual nerve fibres</td><td>Radial nerve: 5–10 fasciculi. Each fasciculus contains 500–1000 fibres. 5000 fibres per mm²</td></tr>
+        <tr><td><strong>Endoneurium</strong></td><td>Covers each individual nerve fibre (axon)</td><td>Surrounds each axon</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dc">
+    <div class="dt">Inferior Alveolar Nerve — Clinical Data</div>
+    <div class="dd">
+      • <strong>10 human inferior alveolar nerves</strong> at lingula level: mean of <strong>18.3 fascicles</strong> (Svane et al.)<br>
+      • Pogrel et al. — 12 human cadavers: <strong>inferior alveolar nerve mean 7.2 fascicles</strong> (range 3–14); <strong>lingual nerve mean 3 fascicles</strong> (range 1–8); 4 of 12 lingual nerves (33%) were <strong>unifascicular</strong> at this location.
+    </div>
+  </div>
+
+  <h3>Mantle vs. Core Fibres — Clinically Important <span class="tag">MCQ</span></h3>
+  <div class="two">
+    <div class="box box-e">
+      <div class="box-label">Mantle Bundles (Peripheral Fasciculi)</div>
+      <ul>
+        <li>First to contact local anesthetic</li>
+        <li>Exposed to <strong>highest concentration</strong></li>
+        <li>Blocked <strong>first and most completely</strong></li>
+        <li>Innervate <strong>more proximal areas</strong> (e.g., <strong>molars in inferior alveolar nerve block</strong>)</li>
+        <li><strong>Last to recover</strong> — remain anesthetized longest</li>
+      </ul>
+    </div>
+    <div class="box box-a">
+      <div class="box-label">Core Bundles (Central Fasciculi)</div>
+      <ul>
+        <li>Contacted by LA only after delay</li>
+        <li>Exposed to <strong>lower concentration</strong> (drug diluted by tissue fluids + capillary absorption)</li>
+        <li>Blocked <strong>later and incompletely</strong></li>
+        <li>Innervate <strong>more distal areas</strong> (e.g., <strong>incisors and canines in inferior alveolar block</strong>)</li>
+        <li><strong>First to recover</strong> — lose anesthesia first</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Physical Properties and Clinical Actions — Summary Table <span class="tag">High Yield</span></h3>
+  <div class="wrap">
+    <table>
+      <thead><tr><th>Property</th><th>Clinical Action Affected</th><th>Relationship</th></tr></thead>
+      <tbody>
+        <tr><td><strong>pKa</strong></td><td>Onset of action</td><td>Lower pKa → more RN at pH 7.4 → faster diffusion through sheath → faster onset</td></tr>
+        <tr class="hrow"><td><strong>Lipid solubility</strong></td><td>Potency (intrinsic)</td><td>Higher lipid solubility → penetrates 90% lipid membrane more easily → greater potency at lower concentrations. Procaine = 1; Etidocaine = 140</td></tr>
+        <tr class="hrow"><td><strong>Protein binding</strong></td><td>Duration of action</td><td>Higher protein binding → RNH⁺ more firmly attached at receptor sites → released more slowly → longer duration</td></tr>
+        <tr><td><strong>Vasodilator activity</strong></td><td>Potency AND duration</td><td>Greater vasodilation → more blood flow to site → faster removal of LA → decreased potency and shortened duration (e.g., procaine has high vasodilator activity)</td></tr>
+        <tr><td><strong>Tissue diffusibility</strong></td><td>Onset</td><td>Increased diffusibility → decreased induction time → faster onset clinically</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Induction Time — Definition &amp; Factors</h3>
+  <div class="dc">
+    <div class="dt">Induction Time</div>
+    <div class="dd">
+      Period from <strong>deposition of anesthetic solution to complete conduction blockade</strong>.<br><br>
+      <strong>Factors under operator's control:</strong><br>
+      • Concentration of the drug (higher = faster)<br>
+      • pH of the local anesthetic solution<br><br>
+      <strong>Factors NOT under clinician's control:</strong><br>
+      • Diffusion constant of the drug<br>
+      • Anatomic barriers to diffusion
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== TACHYPHYLAXIS ===== -->
+<section id="tachyphylaxis">
+<div class="con">
+  <div class="sl">Section 14</div>
+  <h2 class="st">Tachyphylaxis &amp; Recovery from Block <span class="tag">Exam Favourite</span></h2>
+  <p class="ss">"Define tachyphylaxis and describe its causes" — classic short-answer question.</p>
+  <div class="div"></div>
+
+  <div class="dc">
+    <div class="dt">Definition of Tachyphylaxis</div>
+    <div class="dd"><strong>Tachyphylaxis is defined as increasing tolerance to a drug that is administered repeatedly.</strong> In the context of local anesthesia, it refers to a situation where repeated injection of a local anesthetic produces diminishing anesthetic effect. Much more likely to develop if <strong>nerve function returns before reinjection</strong> (patient complains of pain).</div>
+  </div>
+
+  <h3>Causes of Tachyphylaxis (6 Causes)</h3>
+  <ul class="steps">
+    <li class="step"><span class="sn">1</span><div class="sc"><div class="stit">Oedema</div><div class="stxt">Isolates the nerve from contact with local anesthetic solution.</div></div></li>
+    <li class="step"><span class="sn">2</span><div class="sc"><div class="stit">Localized Haemorrhage</div><div class="stxt">Blood products form a physical barrier isolating the nerve from the anesthetic.</div></div></li>
+    <li class="step"><span class="sn">3</span><div class="sc"><div class="stit">Clot Formation</div><div class="stxt">Fibrin clot isolates the nerve from the anesthetic solution.</div></div></li>
+    <li class="step"><span class="sn">4</span><div class="sc"><div class="stit">Transudation</div><div class="stxt">Protein-rich fluid accumulation physically isolates nerve from drug.</div></div></li>
+    <li class="step"><span class="sn">5</span><div class="sc"><div class="stit">Hypernatraemia</div><div class="stxt">Raises the sodium ion gradient, thereby <strong>counteracting the decrease in sodium ion conduction</strong> brought about by the local anesthetic.</div></div></li>
+    <li class="step"><span class="sn">6</span><div class="sc"><div class="stit">Decreased pH of Tissues</div><div class="stxt">Brought about by the first injection of the <strong>acidic local anesthetic solution</strong>. Ambient pH at injection site becomes lower on reinjection → fewer RN molecules are formed → less drug diffuses across nerve sheath.</div></div></li>
+  </ul>
+
+  <h3>Recovery from Nerve Block</h3>
+  <div class="dc">
+    <div class="dt">Recovery Pattern</div>
+    <div class="dd">
+      • Emergence follows the <strong>same diffusion pattern as induction but in reverse order</strong><br>
+      • Extraneural LA concentration continually depleted by diffusion, dispersion, and vascular uptake<br>
+      • When intraneural concentration exceeds extraneural → LA begins to diffuse <strong>out</strong> of nerve<br>
+      • <strong>Mantle fibres lose LA first</strong> → core fibres lose LA last (opposite of induction)<br>
+      • Recovery is <strong>slower than induction</strong> — because LA is bound to receptor sites in sodium channels and is released more slowly than it was absorbed<br>
+      • Longer-acting agents (bupivacaine, etidocaine — 94–95% protein binding) are more firmly bound → released more slowly → longer duration
+    </div>
+  </div>
+
+  <h3>Vasoactivity and Duration</h3>
+  <div class="cg">
+    <div class="card"><div class="ct">High Vasodilator Activity (e.g., Procaine)</div><div class="cb">Increases vascular perfusion at injection site. LA absorbed into cardiovascular compartment rapidly → taken away from nerve → <strong>shortened duration and decreased potency</strong>.</div></div>
+    <div class="card"><div class="ct">Vasopressor Added (e.g., Epinephrine)</div><div class="cb">Decreases tissue perfusion locally → slows vascular absorption of LA → <strong>increased duration and potency</strong>. Gow-Gates block has longer duration than inferior alveolar block (decreased vascularity).</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ===== NERVE FIBRES ===== -->
+<section id="fibres">
+<div class="con">
+  <div class="sl">Section 15</div>
+  <h2 class="st">Classification of Peripheral Nerve Fibres <span class="tag">Table to Memorise</span></h2>
+  <p class="ss">Table 1.1 from the textbook — frequently tested in MCQs. Know the fibre types, their myelin status, diameter, and functions.</p>
+  <div class="div"></div>
+
+  <div class="wrap">
+    <table class="nft">
+      <thead><tr><th>Fibre Class</th><th>Subclass</th><th>Myelin</th><th>Diameter (μm)</th><th>Conduction (m/s)</th><th>Location</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>A</td><td>Alpha (α)</td><td>+ (Yes)</td><td>6–22</td><td>30–120</td><td>Afferent/efferent — muscles &amp; joints</td><td>Motor, proprioception</td></tr>
+        <tr><td>A</td><td>Beta (β)</td><td>+ (Yes)</td><td>6–22</td><td>30–120</td><td>Afferent/efferent — muscles &amp; joints</td><td>Motor, proprioception</td></tr>
+        <tr><td>A</td><td>Gamma (γ)</td><td>+ (Yes)</td><td>3–6</td><td>15–35</td><td>Efferent to muscle spindles</td><td>Muscle tone</td></tr>
+        <tr class="hrow"><td>A</td><td>Delta (δ)</td><td>+ (Yes)</td><td>1–4</td><td>5–25</td><td>Afferent sensory nerves</td><td><strong>Pain, temperature, touch</strong></td></tr>
+        <tr><td>B</td><td>—</td><td>+ (Yes)</td><td>&lt;3</td><td>3–15</td><td>Preganglionic sympathetic</td><td>Various autonomic functions</td></tr>
+        <tr class="hrow"><td>C</td><td>Sympathetic C</td><td>− (No)</td><td>0.3–1.3</td><td>0.7–1.3</td><td>Postganglionic sympathetic</td><td>Various autonomic functions</td></tr>
+        <tr class="hrow"><td>C</td><td>Dorsal root (sC)</td><td>− (No)</td><td>0.4–1.2</td><td>0.1–2.0</td><td>Afferent sensory nerves</td><td><strong>Pain, temperature, touch</strong> + autonomic</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ea"><div>📝</div><div><strong>Exam Memory Points:</strong> Aδ fibres = myelinated pain fibres (fast pain). C fibres = unmyelinated (slow pain, aching). C fibre conduction = <strong>1.2 m/s</strong>. Aα fibres = fastest at up to <strong>120 m/s</strong>. Sodium channel density in small unmyelinated nerves = ~35/μm; at nodes of Ranvier in myelinated fibres = up to <strong>20,000/μm</strong>.</div></div>
+
+  <h3>Differential Nerve Block — Order of Blockade</h3>
+  <div class="dc">
+    <div class="dt">Sequence of Fibre Blockade (Small → Large)</div>
+    <div class="dd">
+      Local anesthetics block smaller fibres before larger fibres. Order of blockade:<br>
+      <strong>1. Autonomic fibres (B, C sympathetic)</strong> — first blocked → vasodilation, skin warm<br>
+      <strong>2. C fibres (pain, temperature)</strong> — blocked early → loss of pain/temperature sensation<br>
+      <strong>3. Aδ fibres (pain, temperature, touch)</strong> — small myelinated<br>
+      <strong>4. Aγ fibres (motor to muscle spindles)</strong><br>
+      <strong>5. Aβ fibres (pressure, touch)</strong><br>
+      <strong>6. Aα fibres (motor, proprioception)</strong> — last blocked, largest<br><br>
+      Recovery occurs in the <strong>reverse order</strong> — largest fibres recover first.
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ===== QUIZ ===== -->
+<section id="quiz" class="quiz-section">
+<div class="con">
+  <div class="sl">Exam Practice</div>
+  <h2 class="st">20 Practice Questions</h2>
+  <p class="ss">Exam-level questions with detailed explanations. Covers all major topics in this chapter.</p>
+  <div class="div"></div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q1.</span> The resting transmembrane potential of a nerve is:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'−40 mV is not the resting potential. The resting potential is −70 mV.')">−40 mV</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Resting potential = −70 mV. Interior is negative relative to exterior. This is maintained by selective ion permeability and concentration gradients.')">−70 mV</li>
+      <li class="qopt" onclick="ans(this,false,'+40 mV is the peak of rapid depolarization, not the resting state.')">+40 mV</li>
+      <li class="qopt" onclick="ans(this,false,'−55 mV is approximately the firing threshold, not resting potential.')">−55 mV</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q2.</span> How much change in transmembrane potential is required to reach the firing threshold?</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'5 mV is insufficient to trigger an action potential.')">5 mV decrease</li>
+      <li class="qopt" onclick="ans(this,false,'10 mV is insufficient — the minimum required is 15 mV.')">10 mV decrease</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. A decrease of 15 mV (e.g., from −70 to −55 mV) is required to reach the firing threshold. A voltage difference of less than 15 mV will NOT initiate an impulse.')">15 mV decrease</li>
+      <li class="qopt" onclick="ans(this,false,'20 mV is more than the minimum needed.')">20 mV decrease</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q3.</span> Which form of the local anesthetic molecule diffuses through the nerve sheath?</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'RNH⁺ is the cationic form. It binds the receptor inside the channel but CANNOT cross the lipid nerve sheath.')">RNH⁺ (cationic/charged form)</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. RN (free base, uncharged) is lipid-soluble and diffuses through the lipid nerve sheath. Once inside the axoplasm, it re-equilibrates — 75% converts to RNH⁺ which binds the receptor site.')">RN (free base/uncharged form)</li>
+      <li class="qopt" onclick="ans(this,false,'Both are important but only RN crosses the sheath.')">Both equally</li>
+      <li class="qopt" onclick="ans(this,false,'Ca²⁺ is displaced by local anesthetics but is not the diffusing form of the drug.')">Calcium ions</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q4.</span> The most widely accepted theory of local anesthetic mechanism of action is:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Acetylcholine theory is discredited — no evidence ACh is involved in axonal conduction.')">Acetylcholine theory</li>
+      <li class="qopt" onclick="ans(this,false,'Calcium displacement theory has been largely discredited as varying Ca²⁺ concentration does not affect LA potency.')">Calcium displacement theory</li>
+      <li class="qopt" onclick="ans(this,false,'Membrane expansion theory explains benzocaine but lacks evidence for complete conduction blockade via this mechanism.')">Membrane expansion theory</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Specific receptor theory is the most accepted. LAs bind to specific receptor sites (R-LA) within the sodium channel on the internal axoplasmic surface. This directly blocks Na⁺ permeability without altering general membrane properties.')">Specific receptor theory</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q5.</span> Sodium channel gates are located near which surface of the nerve membrane?</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,true,'Correct. Sodium channel gates are located near the EXTERNAL surface. Potassium channel gates are located near the INTERNAL surface.')">External surface (sodium channels)</li>
+      <li class="qopt" onclick="ans(this,false,'Internal surface location applies to potassium channel gates, NOT sodium channel gates.')">Internal surface (sodium channels)</li>
+      <li class="qopt" onclick="ans(this,false,'Both surfaces is incorrect — sodium and potassium gates are at different surfaces.')">Both internal and external</li>
+      <li class="qopt" onclick="ans(this,false,'The axoplasm is inside the nerve cell, not a membrane surface location for gates.')">Within the axoplasm</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q6.</span> Duration of local anesthetic action is MOST dependent on:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'pKa determines speed of onset, not duration.')">pKa</li>
+      <li class="qopt" onclick="ans(this,false,'Lipid solubility determines intrinsic potency, not primarily duration.')">Lipid solubility</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Protein binding determines duration. Higher protein binding (e.g., bupivacaine 95%, etidocaine 94%) = drug more firmly bound at receptor sites in sodium channel = released more slowly = longer duration.')">Degree of protein binding</li>
+      <li class="qopt" onclick="ans(this,false,'Vasoactivity affects both potency and duration but is secondary to protein binding as the primary determinant.')">Vasoactivity of the drug</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q7.</span> A minimum length of ___ of nerve must be blocked by local anesthetic in a myelinated nerve to ensure complete conduction failure:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'2–3 mm is insufficient — impulse can skip over 1–2 blocked nodes.')">2–3 mm</li>
+      <li class="qopt" onclick="ans(this,false,'5 mm does not provide a sufficient safety margin.')">5 mm</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Minimum 8–10 mm of nerve must be covered. This ensures at least 2–3 consecutive nodes of Ranvier are blocked. Even if one node is blocked, the impulse can skip it — so multiple adjacent nodes must be blocked.')">8–10 mm</li>
+      <li class="qopt" onclick="ans(this,false,'15–20 mm exceeds the required minimum.')">15–20 mm</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q8.</span> Local anesthetics fail in inflamed tissue primarily because:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Drug still enters tissue, the problem is the pH-dependent form it exists in.')">Drug cannot penetrate inflamed tissue at all</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Inflamed tissue pH 5–6 → ~99% drug as RNH⁺, only ~1% as diffusible RN. Far fewer molecules cross nerve sheath. ADDITIONALLY, increased vascularity in inflamed region accelerates vascular absorption of remaining drug.')">Low tissue pH shifts drug to RNH⁺ form; increased vascularity removes drug rapidly</li>
+      <li class="qopt" onclick="ans(this,false,'Inflammatory mediators do not directly block sodium channels.')">Inflammatory mediators block sodium channels</li>
+      <li class="qopt" onclick="ans(this,false,'Enzymatic degradation is not the primary mechanism of failure.')">Drug rapidly degraded by inflammatory enzymes</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q9.</span> The greatest anatomic barrier to diffusion of local anesthetic into a peripheral nerve is:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Epineural sheath does NOT constitute a barrier to diffusion.')">Epineural sheath</li>
+      <li class="qopt" onclick="ans(this,false,'Epineurium is loose areolar tissue through which LAs diffuse readily.')">Epineurium</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Perilemma (innermost layer of perineurium) covered with smooth mesothelial membrane represents the greatest anatomic barrier to diffusion into a nerve. The perineurium/perilemma together constitute the main barriers.')">Perilemma (innermost perineurium)</li>
+      <li class="qopt" onclick="ans(this,false,'Endoneurium covers individual axons but is not the primary diffusion barrier.')">Endoneurium</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q10.</span> Tachyphylaxis is defined as:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'That describes hypersensitivity or allergy, not tachyphylaxis.')">An allergic reaction to a local anesthetic on second exposure</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Tachyphylaxis = increasing tolerance to a drug administered repeatedly. In local anesthesia, repeated injections produce diminishing effect. Most likely when nerve function returns between injections (patient feels pain).')">Increasing tolerance to a drug administered repeatedly</li>
+      <li class="qopt" onclick="ans(this,false,'That describes acute toxicity, not tachyphylaxis.')">Acute systemic toxicity from excessive dosing</li>
+      <li class="qopt" onclick="ans(this,false,'Duration variation is not tachyphylaxis.')">A shortened duration of action of a local anesthetic</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q11.</span> The pKa of lidocaine is:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'3.5 is the pKa of benzocaine.')">3.5</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Lidocaine, mepivacaine, and prilocaine all share pKa of 7.7. At tissue pH 7.4, lidocaine has 29% in RN form, giving it fast onset (2–4 minutes).')">7.7</li>
+      <li class="qopt" onclick="ans(this,false,'8.1 is the pKa of bupivacaine and ropivacaine.')">8.1</li>
+      <li class="qopt" onclick="ans(this,false,'9.1 is the pKa of procaine, which has slow onset.')">9.1</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q12.</span> In a peripheral nerve, mantle fibres in the inferior alveolar nerve block will innervate:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,true,'Correct. Mantle fibres (outer/peripheral fasciculi) innervate more PROXIMAL regions. In an inferior alveolar block, these correspond to the molar area. Core fibres innervate the more distal regions — incisors and canines.')">Molar region (proximal)</li>
+      <li class="qopt" onclick="ans(this,false,'Incisors and canines are innervated by core fibres, not mantle fibres, in an inferior alveolar block.')">Incisor and canine region (distal)</li>
+      <li class="qopt" onclick="ans(this,false,'Both equally is incorrect — there is a spatial distribution difference.')">Both equally</li>
+      <li class="qopt" onclick="ans(this,false,'Premolars are more central and innervated by fibres between mantle and core bundles.')">Premolar region only</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q13.</span> What are the three sodium channel states?</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Active, passive, and refractory are not the correct designations for sodium channel states.')">Active, passive, refractory</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Three states are: Closed (C) — resting, nonconducting, voltage-responsive. Open (O) — conducting, during depolarization. Inactive (I) — nonconducting, cannot be recruited to O state; absolute refractory period. Channels can go C→O→I; repolarization returns I→C.')">Closed (C), Open (O), Inactive (I)</li>
+      <li class="qopt" onclick="ans(this,false,'Resting, excitable, and refractory are partial descriptions but not the correct channel state nomenclature.')">Resting, excitable, refractory</li>
+      <li class="qopt" onclick="ans(this,false,'Depolarized, repolarized, and hyperpolarized describe membrane potential states, not sodium channel states.')">Depolarized, repolarized, hyperpolarized</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q14.</span> Lipid solubility of a local anesthetic is primarily related to its:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Duration is primarily determined by protein binding, not lipid solubility.')">Duration of action</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Lipid solubility is related to intrinsic potency. Greater lipid solubility allows easier penetration of the nerve membrane (90% lipid). Produces more effective conduction blockade at lower concentrations. Procaine lipid solubility = 1; Etidocaine = 140.')">Intrinsic potency</li>
+      <li class="qopt" onclick="ans(this,false,'Onset is primarily determined by pKa, not lipid solubility.')">Onset of action</li>
+      <li class="qopt" onclick="ans(this,false,'Allergy risk is related to chemical type (ester vs. amide), not lipid solubility.')">Risk of allergic reaction</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q15.</span> The pH of a dental cartridge of local anesthetic containing epinephrine is approximately:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'6.5 is approximately the pH of plain (no vasoconstrictor) solutions.')">6.5</li>
+      <li class="qopt" onclick="ans(this,false,'7.4 is normal tissue pH, not the pH of a vasoconstrictor-containing cartridge.')">7.4</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Epinephrine-containing solutions are acidified by sodium bisulfite (antioxidant) to prevent oxidation of the vasoconstrictor. pH range 2.8–5.5 (most commonly stated as 3.5–4.4). 2% lidocaine with epi measured at pH 3.93 ± 0.43.')">3.5–4.4 (acidified)</li>
+      <li class="qopt" onclick="ans(this,false,'8.0 is alkaline — the opposite of what vasoconstrictor-containing solutions are.')">8.0</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q16.</span> Which local anesthetic is unique in having a thiophene ring (unique aromatic structure) in its molecule?</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Lidocaine has a xylidine (benzene-based) aromatic ring, not thiophene.')">Lidocaine</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Articaine is the only local anesthetic with a THIOPHENE ring instead of benzene ring as the aromatic (lipophilic) portion. This gives it unique diffusion properties. It is classified as an amide.')">Articaine</li>
+      <li class="qopt" onclick="ans(this,false,'Bupivacaine has a standard piperidine-based structure.')">Bupivacaine</li>
+      <li class="qopt" onclick="ans(this,false,'Procaine is an ester derived from para-aminobenzoic acid.')">Procaine</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q17.</span> Which local anesthetic is NOT administered by injection due to tissue-irritating properties but is a potent topical anesthetic?</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Lidocaine is effective both by injection AND topically.')">Lidocaine</li>
+      <li class="qopt" onclick="ans(this,false,'Benzocaine is also topical only, but its reason is poor water solubility, not tissue irritation.')">Benzocaine</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Dyclonine is a potent topical anesthetic that is NOT administered by injection because of its tissue-irritating properties.')">Dyclonine</li>
+      <li class="qopt" onclick="ans(this,false,'Procaine is ineffective topically (not potent enough) — the opposite of the question.')">Procaine</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q18.</span> Recovery from a nerve block is slower than induction because:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Vascular absorption reduces intraneural concentration — it actually helps recovery, not slows it.')">Vascular absorption is reduced during recovery</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. The local anesthetic is bound to receptor sites in the sodium channels and is therefore released more slowly than it was absorbed. This explains why recovery is slower than induction regardless of the drug.')">Local anesthetic is bound to receptor sites and released more slowly than it was absorbed</li>
+      <li class="qopt" onclick="ans(this,false,'pH changes during recovery may occur but are not the primary reason for slower recovery.')">pH of the tissues becomes more acidic during recovery</li>
+      <li class="qopt" onclick="ans(this,false,'Myelin protects all fibers equally — not specifically during recovery.')">Myelin sheath prevents drug from leaving myelinated fibres</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q19.</span> The EMLA cream contains:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Lidocaine and tetracaine is not the composition of EMLA.')">Lidocaine and tetracaine</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. EMLA = Eutectic Mixture of Local Anesthetics — contains lidocaine and prilocaine. It enables local anesthetics to penetrate intact skin, albeit slowly. The word eutectic refers to the mixture having a lower melting point than either component alone.')">Lidocaine and prilocaine (eutectic mixture)</li>
+      <li class="qopt" onclick="ans(this,false,'Benzocaine and lidocaine is not the EMLA formulation.')">Benzocaine and lidocaine</li>
+      <li class="qopt" onclick="ans(this,false,'Articaine and mepivacaine is not the EMLA composition.')">Articaine and mepivacaine</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+  <div class="qc">
+    <div class="qq"><span class="qnum">Q20.</span> The nerve block produced by local anesthetics is termed:</div>
+    <ul class="qo">
+      <li class="qopt" onclick="ans(this,false,'Depolarizing block is the mechanism of agents like succinylcholine — not local anesthetics. LAs do NOT depolarize the membrane.')">Depolarizing nerve block</li>
+      <li class="qopt" onclick="ans(this,true,'Correct. Because the membrane remains in its polarized state (LA prevents the ionic movements needed for action potential), the block is termed a NONDEPOLARIZING nerve block. The electrical potential remains unchanged — local currents do not develop.')">Nondepolarizing nerve block</li>
+      <li class="qopt" onclick="ans(this,false,'Competitive block is a term used in receptor pharmacology for drug competition, not for nerve membrane blockade.')">Competitive nerve block</li>
+      <li class="qopt" onclick="ans(this,false,'Hyperpolarizing block would mean the membrane becomes MORE negative — current evidence shows resting potential is UNALTERED by local anesthetics.')">Hyperpolarizing nerve block</li>
+    </ul>
+    <div class="qfb"></div>
+  </div>
+
+</div>
+</section>
+
+<footer>BDS 3rd Year · Chapter 1 Neurophysiology · Complete Exam Guide · Good luck on your exam!</footer>
+
+<script>
+function ans(el, correct, explanation) {
+  const card = el.closest('.qc');
+  if (card.dataset.done) return;
+  card.dataset.done = '1';
+  const opts = card.querySelectorAll('.qopt');
+  opts.forEach(o => { o.style.pointerEvents='none'; o.style.cursor='default'; });
+  const fb = card.querySelector('.qfb');
+  if (correct) {
+    el.classList.add('correct');
+    fb.textContent = '✓ Correct — ' + explanation;
+    fb.className = 'qfb cfb show';
+  } else {
+    el.classList.add('wrong');
+    fb.textContent = '✗ Incorrect — ' + explanation;
+    fb.className = 'qfb wfb show';
+    opts.forEach(o => {
+      if (o.getAttribute('onclick') && o.getAttribute('onclick').includes('true')) o.classList.add('correct');
+    });
+  }
+}
+const secs = document.querySelectorAll('section[id]');
+const nls = document.querySelectorAll('nav a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  secs.forEach(s => { if (window.scrollY >= s.offsetTop - 70) cur = s.id; });
+  nls.forEach(a => {
+    const active = a.getAttribute('href') === '#' + cur;
+    a.style.color = active ? '#fff' : '';
+    a.style.borderBottomColor = active ? 'var(--amber)' : 'transparent';
+  });
+});
+</script>
+</body>
+</html>
